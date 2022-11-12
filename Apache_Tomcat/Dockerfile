@@ -9,5 +9,5 @@ COPY ./context.xml /usr/local/tomcat/webapps/manager/META-INF
 RUN chmod 777 /usr/local/tomcat/bin/startup.sh
 RUN chmod 777 /usr/local/tomcat/bin/shutdown.sh
 RUN chmod 777 /usr/local/tomcat/bin/catalina.sh
-
+CMD ["catalina.sh" , "run"]
 EXPOSE 8080
